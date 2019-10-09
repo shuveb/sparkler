@@ -24,8 +24,8 @@ Just run `./sparkler` and that should start a Sparkler VM. You can then play aro
 ## The Sparkler web service
 Although we use `libcurl` to fetch content off the internet and use [`json-parser`](https://github.com/udp/json-parser) to parse JSON, doing this is a real pain from C. This is very apparent if you’re like me and you’ve for exposed to the simplicity of handling this kind of stuff with higher-level languages. And so, I wrote a quick-and-dirty Sparkler Web Service that outputs JSON that is easily parsable from C. Also, it lets you try out Sparkler in its full glory without you first having to register for a Twitter developer account for you to access the Twitter API, to be able to fetch the tweet. [This NodeJS service](https://github.com/shuveb/sparkler-service) runs on the excellent Heroku platform for free. You can check out some JSON it outputs by clicking on these links here:
 
-[Tweet Service](href=https://sparkler-service.herokuapp.com/tweet)
-[Weather Service](https://sparkler-service.herokuapp.com/weather)
-[Air Quality Service](https://sparkler-service.herokuapp.com/air_quality)
+- [Tweet Service](https://sparkler-service.herokuapp.com/tweet)
+- [Weather Service](https://sparkler-service.herokuapp.com/weather)
+- [Air Quality Service](https://sparkler-service.herokuapp.com/air_quality)
 
 As you can see, I’ve made output from these different APIs structurally similar while removing a whole lot of JSON data we’ll never use. This lets us handle this with C fairly easily. When the monitor program requests for information from the <code>sparkler</code> program, it makes a request to the web service, parses that information and returns it to the monitor program.
