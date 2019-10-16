@@ -7,7 +7,7 @@ Welcome to Sparkler, a virtual machine monitor and a tiny "operating system" to 
 - Air Quality device: Fetches the air quality readings for a few cities
 
 ## Accompanying article
-Placeholder for article link
+Please read this [companion article](https://unixism.net/2019/10/sparkler-kvm-based-virtual-machine-manager/) for details on how Sparkler works.
 
 ## Sparkler architecture
 ![sparkler architecture](https://unixism.net/wp-content/uploads/2019/10/Sparkler-Architecture.png)
