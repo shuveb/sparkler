@@ -137,7 +137,7 @@ int main(void)
 
     /* Set CPUID */
     struct kvm_cpuid2 *cpuid;
-    int nent = 40;
+    int nent = 100;
     unsigned long size = sizeof(*cpuid) + nent * sizeof(*cpuid->entries);
     cpuid = (struct kvm_cpuid2*) malloc(size);
     bzero(cpuid, size);
